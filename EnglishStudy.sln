@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Commons", "Commons", "{820C273C-5930-43AF-B0CC-2658CA903ADC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.ASPNetCore", "Common.ASPNetCore\Common.ASPNetCore.csproj", "{C480E9B0-18D1-4182-82CC-63996CF5D510}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Commons", "Common.Commons\Common.Commons.csproj", "{BDEC59A0-F0F4-408C-94F6-45A5F9EF7554}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C480E9B0-18D1-4182-82CC-63996CF5D510}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C480E9B0-18D1-4182-82CC-63996CF5D510}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C480E9B0-18D1-4182-82CC-63996CF5D510}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C480E9B0-18D1-4182-82CC-63996CF5D510}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDEC59A0-F0F4-408C-94F6-45A5F9EF7554}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDEC59A0-F0F4-408C-94F6-45A5F9EF7554}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDEC59A0-F0F4-408C-94F6-45A5F9EF7554}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDEC59A0-F0F4-408C-94F6-45A5F9EF7554}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C480E9B0-18D1-4182-82CC-63996CF5D510} = {820C273C-5930-43AF-B0CC-2658CA903ADC}
+		{BDEC59A0-F0F4-408C-94F6-45A5F9EF7554} = {820C273C-5930-43AF-B0CC-2658CA903ADC}
+	EndGlobalSection
+EndGlobal
