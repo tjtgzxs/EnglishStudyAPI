@@ -6,18 +6,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using Common.EventBus;
+using Zack.EventBus;
 
-namespace Zack.EventBus
+namespace Common.EventBus
 {
     public static class ServicesCollectionExtensions
     {
-        public static IServiceCollection AddEventBus(this IServiceCollection services, string queueName,
+        public static IServiceCollection AddMoreEventBus(this IServiceCollection services, string queueName,
             params Assembly[] assemblies)
         {
-            return AddEventBus(services, queueName, assemblies.ToList());
+            return AddMoreEventBus(services, queueName, assemblies.ToList());
         }
 
-        public static IServiceCollection AddEventBus(this IServiceCollection services, string queueName,
+        public static IServiceCollection AddMoreEventBus(this IServiceCollection services, string queueName,
             IEnumerable<Assembly> assemblies)
         {
             List<Type> eventHandlers = new List<Type>();
@@ -27,7 +28,7 @@ namespace Zack.EventBus
                 var types = asm.GetTypes().Where(t => t.IsAbstract == false && t.IsAssignableTo(typeof(IIntegrationEventHandler)));
                 eventHandlers.AddRange(types);
             }
-            return AddEventBus(services, queueName, eventHandlers);
+            return AddMoreEventBus(services, queueName, eventHandlers);
         }
 
         /// <summary>
@@ -39,7 +40,7 @@ namespace Zack.EventBus
         ///</param>
         /// <param name="eventHandlerTypes"></param>
         /// <returns></returns>
-        public static IServiceCollection AddEventBus(this IServiceCollection services, string queueName, IEnumerable<Type> eventHandlerTypes)
+        public static IServiceCollection AddMoreEventBus(this IServiceCollection services, string queueName, IEnumerable<Type> eventHandlerTypes)
         {
             foreach (Type type in eventHandlerTypes)
             {

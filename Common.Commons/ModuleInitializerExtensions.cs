@@ -5,7 +5,7 @@ namespace Common.Commons;
 
 public static class ModuleInitializerExtensions
 {
-    public static IServiceCollection RunModuleInitializers(this IServiceCollection services,
+    public static IServiceCollection RModuleInitializers(this IServiceCollection services,
         IEnumerable<Assembly> assemblies)
     {
         foreach (var assembly in assemblies)

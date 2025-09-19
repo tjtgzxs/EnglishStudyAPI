@@ -6,7 +6,7 @@ namespace Common.JWT;
 
 public static class SwaggerGenOptionsExtensions
 {
-    public static void AddAuthenticationHeader(this SwaggerGenOptions c)
+    public static void AddSwagAuthenticationHeader(this SwaggerGenOptions c)
     {
         c.AddSecurityDefinition("Authorization",new OpenApiSecurityScheme
         {
