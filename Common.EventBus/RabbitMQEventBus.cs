@@ -9,7 +9,7 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using Common.EventBus;
 
-namespace Zack.EventBus;
+namespace Common.EventBus;
 class RabbitMQEventBus : IEventBus, IDisposable
 {
     private IModel _consumerChannel;
